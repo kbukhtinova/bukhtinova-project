@@ -1,0 +1,110 @@
+main {
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.events {
+    margin: 13em auto 5em auto;
+    width: 80%;
+}
+
+.flex1,
+.flex3,
+.flex4 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.flex2 {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.flex-element {
+    flex: 1 max-content;
+}
+
+.flex2 > div:first-of-type {
+    margin-top: -4em;
+}
+
+.flex4 {
+    margin-top: -1.2em;
+}
+
+/*image sizes*/
+
+.w200 {
+    width: 200px;
+    height: 200px;
+}
+
+.w300 {
+    width: 300px;
+    height: 100px;
+}
+
+.w100 {
+    width: 100px;
+    height: 100px;
+}
+
+/*containers*/
+
+.image-container {
+    margin: 0.3em;
+}
+
+.container1 {
+    background: no-repeat url('images/main/fest/burningman2.jpg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+.container2 {
+    background: no-repeat url('images/main/fest/rockbobrov.jpeg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+.container3 {
+    background: no-repeat url('images/main/fest/sunday.jpg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+    margin-top: -1em;
+}
+
+.container4 {
+    background: no-repeat url('images/main/fest/upark.jpg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+    margin-top: 1em;
+}
+
+.container5 {
+    background: no-repeat url('images/main/fest/vivabraslav.jpeg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+.container6 {
+    background: no-repeat url('images/main/fest/zaxidfest2.jpg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+/*event-title*/
+
+.events-title {
+    font-style: inherit;
+    font-weight: 300;
+    font-size: 8em;
+    text-align: center;
+    margin-top: -0.35em;
+}
+
+.events-title > a {
+    text-decoration: none;
+    color: #FD7875;
+}

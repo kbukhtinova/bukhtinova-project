@@ -2,41 +2,48 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
+    font-size: 1rem;
 }
 
 .main-header {
-    line-height: 15px;
+    box-sizing: border-box;
+    line-height: 1.3em;
     position: fixed;
     top: 0;
     left: 0;
     background: black;
-    width: 100%;
+    width: 100vw;
     padding-top: 0.7em;
     display: flex;
+    justify-content: space-between;
 }
 
-.main-nav__items {
+.header-nav,
+.header-logo,
+.search {
+    width: 33%;
+}
+
+.header-nav__items {
     display: flex;
 }
 
-.main-nav__item {
+.header-nav__item {
     font: inherit;
-    font-size: 100%;
     font-weight: 200;
+    width: 20%;
+    text-align: center;
+    padding: 0 1em;
     list-style: none;
-    margin: auto 1.2rem;
-
 }
 
-.main-nav__item > a {
+.header-nav__item > a {
     color: white;
     text-decoration: none;
-    width: 30%;
     white-space: nowrap;
 }
 
-.main-nav__item > a:hover {
+.header-nav__item > a:hover {
     font-weight: bold;
     cursor: pointer;
 }
@@ -56,7 +63,7 @@ body {
 }
 
 .search {
-    margin: 5px 5px 5px auto;
+    margin: 0.2em 0.2em 0.2em auto;
 }
 
 .search-img {
@@ -64,4 +71,56 @@ body {
     float: right;
     margin-right: 2.4em;
     margin-top: 0.6em;
+}
+
+.main-footer {
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+    line-height: 0.7em;
+    margin-left: -0.5em;
+    background: black;
+    width: 100vw;
+}
+
+.footer-nav__item {
+    font: inherit;
+    font-weight: 200;
+    list-style: none;
+    text-align: center;
+    width: 20%;
+    padding-top: 1em;
+    margin-left: -1em;
+}
+
+.footer-nav__item > a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact > a:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact {
+    position: absolute;
+    top: 1em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.snetworks {
+    float: right;
+    margin: 1em 1.8em 1em 0;
+}
+
+.snetworks::after {
+    overflow: hidden;
+}
+
+.snetworks-img {
+    width: 35px;
 }
