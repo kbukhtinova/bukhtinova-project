@@ -11,6 +11,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
     background: black;
     width: 100vw;
     padding-top: 0.7em;

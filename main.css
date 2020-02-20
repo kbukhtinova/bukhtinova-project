@@ -3,6 +3,12 @@ main {
     font-size: 1rem;
 }
 
+a {
+    text-decoration: none;
+}
+
+/*EVENTS*/
+
 .events {
     margin: 13em auto 5em auto;
     width: 80%;
@@ -105,6 +111,87 @@ main {
 }
 
 .events-title > a {
-    text-decoration: none;
     color: #FD7875;
 }
+
+.events-title > a:hover {
+    color: black;
+}
+
+/*BLOGS*/
+
+.blog {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.blog > * {
+    float: right;
+}
+
+.main-article {
+    position: relative;
+    width: 900px;
+    height: 600px;
+    background: url("images/main/fest/vivabraslav.jpeg") no-repeat center;
+    background-size: cover;
+    margin: 5em -1em;
+}
+
+.article-title {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 1em;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: right;
+}
+
+.article-title:hover {
+    text-decoration: underline;
+}
+
+.news {
+    margin-right: 5em;
+}
+
+.blog-title {
+    font-style: inherit;
+    font-weight: 300;
+    font-size: 7em;
+    margin-bottom: 0.5em;
+}
+
+.blog-title > a {
+    color: #FD7875;
+}
+
+.blog-title > a:hover {
+    color: black;
+}
+
+.blog-news {
+    font-style: inherit;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    width: 17em;
+    padding-bottom: 2em;
+}
+
+.blog-news > a {
+    color: black;
+}
+
+.blog-news > a:hover {
+    color: #d9d9d9;
+}
+
+.blog-news::after {
+    overflow: hidden;
+}
+/*.main-article:after {*/
+/*    overflow: hidden;*/
+/*}*/
