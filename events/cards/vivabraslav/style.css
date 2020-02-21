@@ -1,0 +1,82 @@
+main {
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-header {
+    margin: 10em 9em 1em;
+}
+
+.card-header > video {
+    width: 900px;
+    height: 600px;
+}
+
+.card-header__title {
+    font-style: inherit;
+    font-size: 5em;
+    width: 40%;
+    color: #FD7875;
+    text-align: right;
+    text-transform: uppercase;
+    float: right;
+    margin-top: -1em;
+    margin-bottom: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.card-description {
+    width: 60%;
+    margin: 0 0 2em 10em;
+}
+
+.card-description > p {
+    font-style: inherit;
+    font-size: 1em;
+}
+
+.paragraph {
+    margin-bottom: 2em;
+    color: #FD7875;
+}
+
+.paragraph:first-of-type {
+    color: white;
+    background: black;
+    width: 100%;
+    margin: -2.3em 0 0 -12em;
+    padding: 0.4em 0.4em 0.4em 12em;
+}
+
+.insta-name {
+    float: right;
+    color: #d9d9d9;
+    padding: 0.1em 0.2em 0.2em 1em;
+    margin-right: 13%;
+}
+
+.insta-img {
+    float: right;
+    width: 25px;
+    height: 25px;
+}
+
+.insta-img,
+.insta-name {
+    margin-top: 3em;
+}
+
+.insta-name:hover {
+    text-decoration: underline;
+}
+
+.clear {
+    clear: both;
+}

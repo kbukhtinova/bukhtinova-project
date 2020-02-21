@@ -1,0 +1,179 @@
+main {
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*TITLE*/
+
+.block-title {
+    width: 80%;
+    margin: 10em auto 2em;
+}
+
+.block-title__border {
+    height: 5em;
+    border-top: 0.1em solid #FD7875;
+    border-right: 0.1em solid #FD7875;
+    border-left: 0.1em solid #FD7875;
+}
+
+.block-title__name {
+    font-style: inherit;
+    font-weight: 300;
+    font-size: 8em;
+    text-align: center;
+    color: #FD7875;
+    margin-top: -0.5em;
+}
+
+/*EVENTS CARDS*/
+
+.events {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+.events > section {
+    margin: 0 2em 4em 0;
+}
+
+.row1,
+.row2,
+.row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.events__card {
+    margin: -5em 2em 4em;
+}
+
+/*card sizes*/
+
+.w450 {
+    width: 450px;
+    height: 450px;
+}
+
+.w250 {
+    width: 250px;
+    height: 250px;
+}
+
+/*card*/
+
+.events__card-title {
+    font-style: inherit;
+    font-weight: 400;
+    color: black;
+}
+
+.events__card-date {
+    font-style: inherit;
+    font-weight: 400;
+    color: #d9d9d9;
+    float: right;
+}
+
+.events__card-date::after {
+    content: '';
+    overflow: hidden;
+}
+
+/*title sizes*/
+
+.s1 {
+    font-size: 1.5em;
+}
+
+.s2 {
+    font-size: 1.2em;
+}
+
+/*date sizes*/
+
+.d1 {
+    margin-top: 0.5em;
+}
+
+.d2 {
+    margin-top: 0;
+}
+
+/*images*/
+
+.events__card-image1 {
+    background: no-repeat url('../images/main/fest/vivabraslav.jpeg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+.events__card-image2 {
+    background: no-repeat url('../images/main/fest/rockbobrov.jpeg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+.events__card-image3 {
+    background: no-repeat url('../images/main/fest/zaxidfest2.jpg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+.events__card-image4 {
+    background: no-repeat url('../images/main/fest/upark.jpg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+.events__card-image5 {
+    background: no-repeat url('../images/main/fest/lidbeer.jpeg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+.events__card-image6 {
+    background: no-repeat url('../images/main/fest/sunday.jpg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+.events__card-image7 {
+    background: no-repeat url('../images/main/fest/burningman2.jpg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+/*MORE*/
+
+.more__name {
+    font-style: inherit;
+    font-weight: 300;
+    font-size: 4em;
+    text-align: center;
+}
+
+.more {
+    width: 15%;
+    margin: -7em auto 2em;
+}
+
+.more__border {
+    height: 2em;
+    border-bottom: 0.1em solid #FD7875;
+    border-right: 0.1em solid #FD7875;
+    border-left: 0.1em solid #FD7875;
+    margin-top: -6em;
+}
+
+.more > a {
+    color: #FD7875;
+}
