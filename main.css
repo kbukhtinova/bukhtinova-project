@@ -63,41 +63,93 @@ a {
 }
 
 .container1 {
-    background: no-repeat url('images/main/fest/burningman2.jpg') center;
+    background: no-repeat url('images/festivals/burningman2.jpg') center;
     background-size: cover;
     border: 3px solid #FD7875;
 }
 
 .container2 {
-    background: no-repeat url('images/main/fest/rockbobrov.jpeg') center;
+    background: no-repeat url('images/festivals/rockbobrov.jpeg') center;
     background-size: cover;
     border: 3px solid #FD7875;
 }
 
 .container3 {
-    background: no-repeat url('images/main/fest/sunday.jpg') center;
+    background: no-repeat url('images/festivals/sunday.jpg') center;
     background-size: cover;
     border: 3px solid #FD7875;
     margin-top: -1em;
 }
 
 .container4 {
-    background: no-repeat url('images/main/fest/upark.jpg') center;
+    background: no-repeat url('images/festivals/upark.jpg') center;
     background-size: cover;
     border: 3px solid #FD7875;
     margin-top: 1em;
 }
 
 .container5 {
-    background: no-repeat url('images/main/fest/vivabraslav.jpeg') center;
+    background: no-repeat url('images/festivals/vivabraslav.jpeg') center;
     background-size: cover;
     border: 3px solid #FD7875;
 }
 
 .container6 {
-    background: no-repeat url('images/main/fest/zaxidfest2.jpg') center;
+    background: no-repeat url('images/festivals/zaxidfest2.jpg') center;
     background-size: cover;
     border: 3px solid #FD7875;
+}
+
+.container1,
+.container2,
+.container3,
+.container4,
+.container5,
+.container6 {
+    transition: filter 1s;
+    filter: grayscale(0%);
+}
+
+.container1:hover,
+.container2:hover,
+.container3:hover,
+.container4:hover,
+.container5:hover,
+.container6:hover {
+    filter: grayscale(99%);
+}
+
+.container-header {
+    visibility: hidden;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container1-header,
+.container6-header {
+    padding-top: 75%;
+}
+
+.container2-header,
+.container5-header {
+    padding-top: 18%;
+}
+
+.container3-header,
+.container4-header {
+    padding-top: 55%;
+}
+
+.container1:hover .container-header,
+.container2:hover .container-header,
+.container3:hover .container-header,
+.container4:hover .container-header,
+.container5:hover .container-header,
+.container6:hover .container-header {
+    visibility: visible;
+    transition: 1s;
 }
 
 /*event-title*/
@@ -133,11 +185,25 @@ a {
 }
 
 .choice-form {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.choice-form > input {
-    padding: 0.2em;
+form > * {
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+input[type="button"],
+select {
+    width: 10em;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    color: #d9d9d9;
+    font-size: 1.4em;
+    text-align-last: center;
 }
 
 /*BLOGS*/
@@ -156,7 +222,7 @@ a {
     position: relative;
     width: 55em;
     height: 37em;
-    background: no-repeat url("images/main/fest/vivabraslav.jpeg")  center;
+    background: no-repeat url("images/festivals/vivabraslav.jpeg")  center;
     background-size: cover;
     margin: 5em -1em;
 }
