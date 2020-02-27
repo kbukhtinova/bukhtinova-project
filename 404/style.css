@@ -1,0 +1,26 @@
+#color-link {
+    text-decoration: none;
+    font-size: 14em;
+    font-weight: 600;
+    color: #d9d9d9;
+    margin-bottom: 0;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main {
+    font-size: 1rem;
+}
+
+.page-404 {
+    margin: 10em 6em 10em;
+}
+
+
+.page-description {
+    font-size: 1.5em;
+    color: #d9d9d9;
+}

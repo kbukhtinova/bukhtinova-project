@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>404 page</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+	<header class="main-header">
+		<nav class="header-nav">
+			<ul class="header-nav__items">
+				<li class="header-nav__item">
+					<a href="../events/index.html">
+						events
+					</a>
+				</li>
+				<li class="header-nav__item">
+					<a href="#">
+						blogs
+					</a>
+				</li>
+				<li class="header-nav__item">
+					<a href="#">
+						about us
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header-logo">
+			<a href="../index.html">
+				<img src="../images/logo.png" class="logo">
+			</a>
+		</div>
+		<!--		<form class="search">-->
+		<!--			<input type="text" placeholder="I am looking for...">-->
+		<!--			<button type="submit"></button>-->
+		<!--		</form>-->
+		<div class="search">
+			<a href="index.html">
+				<img src="../images/icons/search.png" class="search-img">
+			</a>
+		</div>
+	</header>
+
+	<main>
+		<section class="page-404">
+			<a id="color-link" href="#">404</a>
+			<p class="page-description">Эта страница появится немного позже.</p>
+		</section>
+	</main>
+
+	<footer class="main-footer">
+		<div class="snetworks">
+			<a href="#" class="snetwork1">
+				<img src="../images/icons/fb.png" class="snetworks-img">
+			</a>
+			<a href="#" class="snetwork2">
+				<img src="../images/icons/inst.png" class="snetworks-img">
+			</a>
+		</div>
+		<nav class="footer-nav">
+			<ul class="footer-nav__items">
+				<li class="footer-nav__item mail">
+					<a href="mailto:gotofest@gmail.com">
+						gotofest@gmail.com
+					</a>
+				</li>
+				<li class="footer-nav__item contact">
+					<a href="#">
+						contact us
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+
+	<script>
+      var anchor = document.getElementById('color-link');
+
+      anchor.onmouseover = change;
+
+      function change() {
+          var r = Math.floor(Math.random() * 256);
+          var g = Math.floor(Math.random() * 256);
+          var b = Math.floor(Math.random() * 256);
+          anchor.style.color = 'rgb(' + r + ',' + g + ',' + b + ')';
+      }
+	</script>
+</body>
+</html>
