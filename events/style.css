@@ -1,3 +1,9 @@
+body {
+    max-width: 1440px;
+    min-width: 660px;
+}
+
+
 main {
     box-sizing: border-box;
     font-size: 1rem;
@@ -40,16 +46,13 @@ a {
     width: 70%;
 }
 
-.events > section {
-    margin: 0 2em 4em 0;
-}
-
 .row1,
 .row2,
 .row3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 4em;
 }
 
 .events__card {
@@ -152,18 +155,57 @@ a {
     border: 3px solid #FD7875;
 }
 
+.events__card-image8 {
+    background: no-repeat url('../images/festivals/firenzerock.jpg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+.events__card-image9 {
+    background: no-repeat url('../images/festivals/rockslide.jpg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+.events__card-image10 {
+    background: no-repeat url('../images/festivals/bilbao.jpg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+.events__card-image11 {
+    background: no-repeat url('../images/festivals/tallinmusic.jpg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
+.events__card-image12 {
+    background: no-repeat url('../images/festivals/lollapalooza.jpg') center;
+    background-size: cover;
+    border: 3px solid #FD7875;
+}
+
 /*MORE*/
 
-.more__name {
+.more {
+    width: 15%;
+    margin: -7em auto 4em;
+}
+
+.more__button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Montserrat', sans-serif;
     font-style: inherit;
     font-weight: 300;
     font-size: 4em;
     text-align: center;
+    margin: 0 0.2em 1.2em;
+    color: #FD7875;
 }
 
-.more {
-    width: 15%;
-    margin: -7em auto 2em;
+.more__button:focus {
+    outline: 0;
 }
 
 .more__border {
@@ -174,6 +216,92 @@ a {
     margin-top: -6em;
 }
 
-.more > a {
-    color: #FD7875;
+@media (max-width: 1200px) {
+    .more__button {
+        font-size: 3em;
+        margin: 0 0.4em 1.4em;
+    }
+
+    .more__border {
+        height: 1.6em;
+    }
+}
+
+@media (max-width: 1100px) {
+    .more__button {
+        font-size: 2em;
+        margin: 0 1em;
+    }
+
+    .more__border {
+        height: 1em;
+        margin-top: -0.8em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .w450 {
+        width: 350px;
+        height: 350px;
+    }
+
+    .w250 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .more__button {
+        font-size: 2em;
+        margin: 0 1em;
+    }
+
+    .more__border {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .w450 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .w250 {
+        width: 100px;
+        height: 100px;
+    }
+
+    /*title sizes*/
+    .s1 {
+        font-size: 1em;
+    }
+
+    .s2 {
+        font-size: 0.7em;
+    }
+
+    /*date sizes*/
+    .d1 {
+        font-size: 0.7em;
+    }
+
+    .d2 {
+        font-size: 0.5em;
+        margin-top: 1em;
+    }
+
+    .more__button {
+        font-size: 2em;
+        margin: 0 0.2em;
+    }
+}
+
+.hide-me {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.75);
+}
+
+#page2 {
+    display: none;
 }

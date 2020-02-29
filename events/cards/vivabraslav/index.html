@@ -5,6 +5,7 @@
 	<title>Viva braslav</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="../../../shared.css">
+	<script src="../../../jquery-3.4.1.js"></script>
 </head>
 <body>
 	<header class="main-header">
@@ -45,14 +46,13 @@
 
 	<main class="card">
 		<section class="card-header">
-			<video autoplay preload="auto" controls="controls" poster="../../../images/main/fest/vivabraslav.jpeg">
-				<source src="https://youtu.be/_8bielMpTcA">
-			</video>
+			<iframe class="header-video" src="https://www.youtube.com/embed/_8bielMpTcA" frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			<p class="card-header__title">Viva braslav</p>
 			<div class="clear"></div>
 		</section>
 		<section class="card">
-			<a href="https://www.instagram.com/vivabraslav.real/" class="insta">
+			<a href="https://www.instagram.com/vivabraslav.real/" class="insta" target="_blank">
 				<span class="insta-name">@vivabraslav.real</span>
 				<img src="../../../images/icons/insta2.png" class="insta-img">
 			</a>
@@ -76,8 +76,17 @@
 					Matisse & Sadko (Россия), Stadiumx (Венгрия), T-Fest (Украина) и многие другие.</p>
 			</article>
 		</section>
-		<section class="card-company"></section>
-		<div class="ticket"></div>
+		<section class="card-company">
+			<button id="btn" class="company-header" href="#">Хочу пойти</button>
+			<div id="none" class="none">
+				<div class="line"></div>
+				<div class="company">
+					<img class="companion w100" src="../../../images/people/man1.jpg">
+					<img class="companion w100" src="../../../images/people/man2.jpg">
+					<img class="companion w100" src="../../../images/people/man3.jpg">
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<footer class="main-footer">
@@ -104,5 +113,46 @@
 			</ul>
 		</nav>
 	</footer>
+
+	<script>
+      // var btn = document.getElementById('btn');
+      // // var btnblc = document.getElementById('btn-block');
+      // btn.onclick = function down()
+      // {
+      //     var a = document.getElementById('none');
+      //
+      // };
+
+      $('.company-header').click(function () {
+          $('.none').toggle();
+      });
+
+      // $("#btn").click(function() {
+      //     if ($("#none").css('display', 'none') {
+      //         $("#none").css('display', 'block');
+      //         $("#btn").css('color', 'black');
+      //     } else {
+      //         $("#none").css('display', 'none');
+      //         $("#btn").css('color', '#d9d9d9');
+      //     }
+      // });
+
+
+      // $('#none').each(function () {
+      //
+      // });
+
+
+      // if ($element.is(':hidden')) {
+      //     // $element не виден
+      // }
+      //
+      //
+      // });
+      //
+      // $("#show").click(function(){
+      //     $("p").show();
+      // });
+	</script>
 </body>
 </html>

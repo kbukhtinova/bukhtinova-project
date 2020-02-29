@@ -1,3 +1,8 @@
+body {
+    max-width: 1440px;
+    min-width: 660px;
+}
+
 main {
     box-sizing: border-box;
     font-size: 1rem;
@@ -11,7 +16,7 @@ a {
     margin: 10em 9em 1em;
 }
 
-.card-header > video {
+.header-video {
     width: 900px;
     height: 600px;
 }
@@ -44,7 +49,7 @@ a {
 
 .paragraph {
     margin-bottom: 2em;
-    color: #FD7875;
+    color: #000000;
 }
 
 .paragraph:first-of-type {
@@ -77,6 +82,179 @@ a {
     text-decoration: underline;
 }
 
+.card-company {
+    width: 60%;
+    margin: 0 0 2em 10em;
+}
+
+.company-header {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.company-header:hover {
+    color: #d9d9d9;
+}
+
+.company-header:focus {
+    outline: none;
+}
+
+#none {
+    display: none;
+}
+
+.line {
+    /*display: none;*/
+    width: 60%;
+    height: 0.2em;
+    background-color: black;
+}
+
+.line::after {
+    /*display: none;*/
+    content: "выбирай с кем";
+    font-size: 1em;
+    color: #d9d9d9;
+    margin-left: 0.5em;
+}
+
+.companion {
+    /*display: none;*/
+    border-radius: 40px;
+    margin-top: 2em;
+    margin-right: 1em;
+}
+
+.w100 {
+    width: 80px;
+    height: 80px;
+}
+
 .clear {
     clear: both;
+}
+
+@media (max-width: 1200px) {
+    .card-header {
+        margin: 10em 10em;
+    }
+
+    .header-video {
+        width: 650px;
+        height: 400px;
+    }
+
+    .insta-name {
+        margin-right: 8%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .card-header {
+        margin: 10em 13em;
+    }
+
+    .card-header__title {
+        width: 10em;
+        float: none;
+        margin: 0 auto -2em;
+    }
+
+    .insta-name {
+        margin-right: 6%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card-header {
+        margin: 10em 12.5em;
+    }
+
+    .card-header__title {
+        width: 10em;
+        margin: 0 -2.3em -2em;
+    }
+
+    .insta-name {
+        margin-right: 4%;
+    }
+}
+
+@media (max-width: 970px) {
+    .insta-name {
+        margin-right: 2%;
+    }
+}
+
+@media (max-width: 920px) {
+    .card-header {
+        margin: 10em 8em;
+    }
+
+    .insta-name {
+        margin-right: 1%;
+    }
+}
+
+@media (max-width: 890px) {
+    .card-header {
+        margin: 10em 8em 11em;
+    }
+
+    .insta {
+        display: none;
+    }
+}
+
+@media (max-width: 860px) {
+    .card-header {
+        margin: 10em 7em 11em;
+    }
+}
+
+@media (max-width: 840px) {
+    .card-header {
+        margin: 10em 6em 11em;
+    }
+}
+
+@media (max-width: 815px) {
+    .card-header {
+        margin: 10em 5em 11em;
+    }
+}
+
+@media (max-width: 790px) {
+    .card-header {
+        margin: 10em 4em 11em;
+    }
+}
+
+@media (max-width: 760px) {
+    .card-header {
+        margin: 10em 3em 11em;
+    }
+}
+
+@media (max-width: 730px) {
+    .card-header {
+        margin: 10em 2em 11em;
+    }
+}
+
+@media (max-width: 700px) {
+    .card-header {
+        margin: 10em 1em 11em;
+    }
+}
+
+@media (max-width: 675px) {
+    .card-header {
+        margin: 10em 0.5em 11em;
+    }
 }

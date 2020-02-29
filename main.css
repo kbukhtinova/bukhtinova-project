@@ -1,5 +1,6 @@
 body {
     max-width: 1440px;
+    min-width: 660px;
     margin: 0 auto;
 }
 
@@ -13,6 +14,7 @@ a {
 }
 
 /*EVENTS*/
+
 
 .events {
     margin: 13em auto 5em auto;
@@ -157,6 +159,48 @@ a {
     transition: 1s;
 }
 
+@media (max-width: 860px) {
+    .flex1,
+    .flex2,
+    .flex3,
+    .flex4 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .container6 {
+        margin: 0 auto;
+    }
+
+    /*image sizes*/
+    .w200 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .w300 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .w100 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .container4-header,
+    .container5-header,
+    .container6-header {
+        padding-top: 75%;
+    }
+}
+
 /*event-title*/
 
 .events-title {
@@ -219,6 +263,22 @@ select:focus {
     color: black;
 }
 
+@media (max-width: 1200px) {
+    .choice-header {
+        width: 40%;
+    }
+
+    .choice-form {
+        width: 10em;
+        margin: 0 auto;
+    }
+
+    input[type="button"],
+    select {
+        margin-bottom: 1em;
+    }
+}
+
 /*BLOGS*/
 
 .blog {
@@ -235,7 +295,7 @@ select:focus {
     position: relative;
     width: 55em;
     height: 37em;
-    background: no-repeat url("images/festivals/vivabraslav.jpeg")  center;
+    background: no-repeat url("images/festivals/vivabraslav.jpeg") center;
     background-size: cover;
     margin: 5em -1em;
 }
@@ -293,4 +353,44 @@ select:focus {
 .blog-news::after {
     content: '';
     overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+    .blog > * {
+        float: none;
+    }
+
+    .main-article {
+        width: 100vw;
+        height: 100vh;
+        background: no-repeat url("images/festivals/vivabraslav.jpeg") center;
+        background-size: cover;
+        margin: 5em auto 0;
+    }
+
+    .news {
+        margin: 0 auto;
+    }
+
+    .blog-title {
+        margin: 0 0 0 1em;
+    }
+
+    .blog-news {
+        display: inline-flex;
+        flex-direction: row;
+        font-size: 1em;
+        width: 30%;
+        margin: 1em 0 1em 2em;
+    }
+}
+
+@media (max-width: 1043px) {
+    .blog-news {
+        display: inline-flex;
+        flex-direction: row;
+        font-size: 0.6em;
+        width: 30%;
+        margin: 2em 0 1em 2em;
+    }
 }

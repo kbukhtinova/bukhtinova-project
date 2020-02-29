@@ -1,0 +1,254 @@
+body {
+    max-width: 1440px;
+    min-width: 660px;
+}
+
+main {
+    background-color: black;
+}
+
+.article-header {
+    width: 100%;
+    height: 100%;
+}
+
+/*body {*/
+/*    overflow: hidden;*/
+/*}*/
+
+.article-content {
+    color: white;
+}
+
+.header-background {
+    width: 100%;
+    height: 100vh;
+    background: url("../../../images/articles/viva braslav/main-vb.jpeg") center center no-repeat;
+    background-size: cover;
+    transform: scale(1.1);
+    max-width: 1440px;
+}
+
+.header-title {
+    padding-top: 13em;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+}
+
+.header-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    max-width: 1440px;
+}
+
+.main-title {
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1em;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+.author {
+    font-size: 0.9em;
+    margin: 2.5em 2.5em;
+    text-align: right;
+    color: #d9d9d9;
+}
+
+.article-content {
+    margin: 3em 7em;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.article-content > * {
+    margin-bottom: 1.5em;
+}
+
+.subheader {
+    width: 100%;
+    margin-left: -20%;
+    background-color: white;
+    color: black;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.speech,
+.question {
+    font-style: oblique;
+}
+
+.question {
+    font-weight: 600;
+}
+
+.picture {
+    margin: 0 auto;
+}
+
+.last-img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.main-footer {
+    margin-top: -1em;
+}
+
+.black {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .picture > img {
+        width: 1000px;
+        height: auto;
+    }
+
+    .black {
+        display: block;
+        width: 100vw;
+        height: 10vh;
+        background-color: black;
+        margin-bottom: -3em;
+    }
+}
+
+@media (max-width: 1150px) {
+    .article-content {
+        margin: 3em 8em 3em 5em;
+    }
+
+    .picture > img {
+        width: 900px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1020px) {
+    .main-title {
+        font-size: 1em;
+    }
+
+    .subtitle {
+        font-size: 0.7em;
+    }
+
+    .article-content {
+        margin: 3em 3em 3em 4em;
+    }
+}
+
+@media (max-width: 990px) {
+    .subheader {
+        margin-left: -15%;
+    }
+
+    .article-content {
+        margin: 3em 3em 3em 2em;
+    }
+}
+
+@media (max-width: 950px) {
+    .subheader {
+        margin-left: -13%;
+    }
+
+    .picture > img {
+        width: 800px;
+        height: auto;
+    }
+
+    .article-content {
+        margin: 3em;
+    }
+}
+
+@media (max-width: 870px) {
+    .header-background {
+        height: 90vh;
+    }
+
+    .main-title {
+        font-size: 0.8em;
+    }
+
+    .subtitle {
+        font-size: 0.5em;
+    }
+
+    .subheader {
+        margin-left: -11%;
+    }
+
+    .picture > img {
+        width: 700px;
+        height: auto;
+    }
+}
+
+@media (max-width: 770px) {
+    .header-background {
+        height: 80vh;
+    }
+
+    .main-title {
+        font-size: 0.7em;
+    }
+
+    .subtitle {
+        font-size: 0.4em;
+    }
+
+    .author {
+        font-size: 0.8em;
+    }
+
+    .subheader {
+        margin-left: -7%;
+    }
+
+    .picture > img {
+        width: 600px;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 670px) {
+    .header-background {
+        height: 70vh;
+    }
+
+    .main-title {
+        font-size: 0.7em;
+    }
+
+    .subtitle {
+        font-size: 0.4em;
+    }
+
+    .author {
+        font-size: 0.7em;
+    }
+
+
+    .subheader {
+        margin-left: -7%;
+    }
+
+    .picture > img {
+        width: 600px;
+        height: auto;
+    }
+}
